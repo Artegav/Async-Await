@@ -11,7 +11,7 @@
 
                 for (int i = 0; i < ints.Length; i++)
                 {
-                    ints[i] = random.Next(100);
+                    ints[i] = random.Next(1, 100);
                 }
 
                 Console.WriteLine("Creating an array with 10 random integers");

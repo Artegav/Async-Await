@@ -25,7 +25,6 @@ class Program
         catch (AggregateException ex)
         {
             Console.WriteLine("An acception has occured: " + ex.Message);
-            throw;
         }
 
         Console.ReadKey();

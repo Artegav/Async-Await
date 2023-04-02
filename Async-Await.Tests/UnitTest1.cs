@@ -20,6 +20,21 @@ public class UnitTest1
     }
 
     [Fact]
+    public void MultiplyRandomArrayTest()
+    {
+        // Arrange
+        int[] arr = new int[] { 1, 2, 3 };
+        int rnd = new Random().Next(1, 11);
+        int[] expected = arr.Select(i => i * rnd).ToArray();
+
+        // Act
+        int[] result = MultiplyRandomArrayAsync(arr).Result;
+
+        // Assert
+        result.ShouldBe(expected);
+    }
+
+    [Fact]
     public void SortArrayByAscendingTest()
     {
         //Arrange
